@@ -9,19 +9,11 @@ public class Substance {
     private final List<Observer> observers = new ArrayList<>();
 
     private double temperature;
-    private double weight;
-    private String color;
 
     public double getTemperature() {return temperature;}
-    public double getWeight() {return weight;}
 
     public void setTemperature(double temperature) {
         this.temperature = temperature;
-        notifyAllObservers();
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
         notifyAllObservers();
     }
 
